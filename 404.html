@@ -10,7 +10,7 @@
     // На GitHub Pages сайт живёт в подпапке репозитория: ссылки и стили считаем от её корня
     (function () {
       var p = location.pathname.split('/').filter(Boolean);
-      if (location.hostname.slice(-10) === 'github.io' && p.length) document.write('<base href="/' + p[0] + '/">');
+      if (/\.github\.io$/.test(location.hostname) && p.length) document.write('<base href="/' + p[0] + '/">');
     })();
   </script>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
