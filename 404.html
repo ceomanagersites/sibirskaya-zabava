@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Страница не найдена — Сибирская забава</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0A1630">
+  <script>
+    // На GitHub Pages сайт живёт в подпапке репозитория: ссылки и стили считаем от её корня
+    (function () {
+      var p = location.pathname.split('/').filter(Boolean);
+      if (location.hostname.slice(-10) === 'github.io' && p.length) document.write('<base href="/' + p[0] + '/">');
+    })();
+  </script>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@300&family=Sofia+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css?v=1">
+</head>
+<body>
+  <main class="lost">
+    <svg viewBox="0 0 32 32" width="56" height="56" aria-hidden="true" style="color:#E9EDEE"><path d="M16 4 29 27H3L16 4Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M16 13.2 22.3 24.2H9.7L16 13.2Z" fill="#E2793A"/></svg>
+    <h1 class="display">Здесь только снег</h1>
+    <p class="muted" style="color:rgba(233,237,238,.72);max-width:28em">Такой страницы нет. Баня, бассейн и&nbsp;дом&nbsp;— на&nbsp;главной.</p>
+    <p style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center">
+      <a class="btn btn--fire" id="home" href="./">На главную</a>
+      <a class="btn btn--ghost" href="tel:+79135387733">Позвонить</a>
+    </p>
+  </main>
+</body>
+</html>
